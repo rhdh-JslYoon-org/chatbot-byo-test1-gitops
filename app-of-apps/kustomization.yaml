@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  rhtap/gitops: chatbot-byo-test1
+  janus-idp.io/tekton: chatbot-byo-test1
+  backstage.io/kubernetes-id: chatbot-byo-test1
+  backstage.io/kubernetes-namespace: rhdh-app
+  app.kubernetes.io/part-of: chatbot-byo-test1
+resources:
+  - application-dev.yaml
